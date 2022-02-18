@@ -16,4 +16,9 @@ public class DefaultController {
         return new ResponseEntity<>(new ApiResponse("It works"), HttpStatus.OK);
     }
 
+    @GetMapping("/test")
+    public ResponseEntity<ApiResponse> test(){
+        return landing();
+    }
+
 }
